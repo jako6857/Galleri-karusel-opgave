@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>animals of the world</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="assets/css/site.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
     <script src="assets/js/gallery.js" defer></script>
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>Animals of the world</h1>
-        <p>A gallery of fantastic animals</p>
+      <h1>Animals of the world</h1>
+      <p>A gallery of fantastic animals</p>
     </header>
 
+    <div class="slideShow-Container">
+      <div class="mySlides-fade">
+        <div class="numberTxt">1 / 5</div>
+        <img src="assets/img/elephant.jpg" alt="" />
+        <div class="text">Elefant</div>
+      </div>
+
+      <div class="mySlides-fade">
+        <div class="numberTxt">2 / 5</div>
+        <img src="assets/img/great-white.jpg" alt="" />
+        <div class="text">Haj</div>
+      </div>
+
+      <div class="mySlides-fade">
+        <div class="numberTxt">3 / 5</div>
+        <img src="assets/img/koala.jpg" alt="" />
+        <div class="text">Koala</div>
+      </div>
+
+      <div class="mySlides-fade">
+        <div class="numberTxt">4 / 5</div>
+        <img src="assets/img/smithi.jpg" alt="" />
+        <div class="text">Smithi</div>
+      </div>
+
+      <div class="mySlides-fade">
+        <div class="numberTxt">5 / 5</div>
+        <img src="assets/img/tiger.jpg" alt="" />
+        <div class="text">Tiger</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div class="pageDots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
     <section id="app"></section>
-
-
-</body>
-
+  </body>
 </html>
